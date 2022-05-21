@@ -16,7 +16,6 @@ func Submit(ctx context.Context, cl *speech.Client, bucket, object string) ([]st
 	req := &speechpb.LongRunningRecognizeRequest{
 		Config: &speechpb.RecognitionConfig{
 			Encoding:        speechpb.RecognitionConfig_LINEAR16,
-			SampleRateHertz: 44100,
 			LanguageCode:    "en-US",
 		},
 		Audio: &speechpb.RecognitionAudio{
