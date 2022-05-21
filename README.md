@@ -16,6 +16,7 @@ the Google Speech API may not be free.
 Second, install
 [gcloud](https://cloud.google.com/sdk/) and allow application default
 credentials:
+
 ```
 $ gcloud auth application-default login
 ```
@@ -28,8 +29,7 @@ or equivalent. On OSX, an option would be `$ brew install sox`.
 
 Fourth, install the transcribe tool:
 ```
-$ go get github.com/herohde/transcribe
-$ go install github.com/herohde/transcribe/cmd/transcribe
+$ go install github.com/herohde/transcribe/cmd/transcribe@latest
 ```
 
 Then run:
